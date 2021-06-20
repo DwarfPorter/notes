@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notes">
+        <item>хлеб</item>
+        <item>счета</item>
+        <item>встреча</item>
+        </string-array>
+</resources>
+
+
