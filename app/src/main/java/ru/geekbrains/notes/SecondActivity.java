@@ -11,14 +11,13 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-            setContentView(R.layout.activity_second);
-        if (savedInstanceState == null) {
-           NotesDescripFragment fragment = new NotesDescripFragment();
-           fragment.setArguments(getIntent().getExtras());
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.fragmentContainerView,fragment).commit();
+        setContentView(R.layout.activity_second);
+        NotesDescripFragment fragment = new NotesDescripFragment();
+        Bundle params = getIntent().getExtras();
+        fragment.setArguments(params);
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragmentContainerView, fragment).commit();
 
-        }
     }
 }
